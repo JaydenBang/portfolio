@@ -479,6 +479,15 @@ body.erased details.w,body.erased .hello{display:none}
 .addenda div{border:1.5px solid var(--graphite);background:var(--sheet);padding:14px 16px}
 .addenda p{margin:6px 0 0;font-size:16px}
 .addenda .yr{font-family:var(--draft);font-weight:600;color:var(--red);letter-spacing:.06em}
+.gsa{margin-block:8px 18px;border:1.5px solid var(--graphite);background:var(--sheet);padding:16px 18px 22px}
+.gsa-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.gsa > p{margin:6px 0 18px;font-size:16px}
+.gsa .yr{font-family:var(--draft);font-weight:600;color:var(--red);letter-spacing:.06em}
+.gsa-grid{display:grid;grid-template-columns:1.78fr 1.33fr .75fr;gap:18px;align-items:start}
+.gsa .photo.has{max-width:none}
+.gsa .photo.has img{aspect-ratio:auto;height:auto}
+.gsa .photo.has:nth-child(3){transform:rotate(-1deg)}
+@media (max-width:640px){.gsa-grid{grid-template-columns:1.33fr .75fr;gap:14px}.gsa-grid .photo.has:first-child{grid-column:1/-1}}
 
 /* service: field notebook */
 .notebook{position:relative;background-color:#FDFDF9;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,#C9D7E6 31px 32px);margin-block:24px 56px;padding:48px 28px 40px 88px;box-shadow:0 18px 40px -24px rgba(30,40,30,.35)}
@@ -636,6 +645,15 @@ body.erased details.w,body.erased .hello{display:none}
       </div>
     </div>
   </article>
+  <section class="gsa" id="gsa" aria-label="GSA 2026 poster">
+    <div class="gsa-head"><span class="lbl">GSA poster</span><span class="yr">2026</span></div>
+    <p>Presenting at the GSA 2026 Annual Scientific Meeting, as a Gerontological Society of America student researcher.</p>
+    <div class="gsa-grid">
+      <figure class="photo has"><img src="photos/gsa-poster.jpg" alt="Jayden's GSA 2026 poster: Ensemble Machine Learning and SHAP-Based Analysis of Hippocampal MRI Radiomics for Classification of Cognitive Impairment" width="2400" height="1350" loading="lazy"><figcaption>Poster · GSA 2026</figcaption></figure>
+      <figure class="photo has"><img src="photos/gsa-booth.jpg" alt="Jayden with Dr. Francis Collins, former Director of the National Institutes of Health and leader of the Human Genome Project, at GSA 2026" width="1600" height="1200" loading="lazy"><figcaption>With Dr. Francis Collins · former NIH Director, led the Human Genome Project</figcaption></figure>
+      <figure class="photo has"><img src="photos/gsa-welcome.jpg" alt="Jayden holding his badge in front of the Welcome GSA 2026 sign" width="1200" height="1600" loading="lazy"><figcaption>National Harbor, MD</figcaption></figure>
+    </div>
+  </section>
   <!-- 03 MEMENTO -->
   <article class="sheet" id="memento">
     <div class="frame">
@@ -771,7 +789,6 @@ body.erased details.w,body.erased .hello{display:none}
     </div>
   </article>
   <div class="addenda" aria-label="Research addenda">
-    <div><span class="lbl">GSA poster</span><p>Presenting at the GSA 2026 Annual Scientific Meeting, as a Gerontological Society of America student researcher.</p><span class="yr">2026</span></div>
     <div><span class="lbl">UCLA Global Medical Brigades</span><p>Global Champion: crisis response strategy for a simulated outbreak; top team of 550+ participants, 25+ countries.</p><span class="yr">2025</span></div>
     <div><span class="lbl"><i>wah-1</i> in <i>C. elegans</i></span><p>Bioinformatics on <i>wah-1</i> expression and Parkinson's-associated orthologs, with Python, R and DESeq2.</p></div>
   </div>
