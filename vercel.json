@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/commonapp/", "destination": "/commonapp", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/commonapp", "destination": "/index.html" }
+  ]
+}
